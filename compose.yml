@@ -11,7 +11,7 @@ services:
     restart: always
 
   nginx:
-    image: nginx:stable-alpine
+    image: nginx:alpine
     ports:
       - "8080:8080"
     volumes:
@@ -21,7 +21,7 @@ services:
     restart: always
 
   redis:
-    image: redis:stable-alpine
+    image: redis:alpine
     container_name: redis
     expose:
       - "6379"
